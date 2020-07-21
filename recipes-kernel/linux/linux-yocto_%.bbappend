@@ -1,0 +1,5 @@
+FILESEXTRAPATHS_append := "${THISDIR}/${PN}/"
+SRCREV_meta-bsp ?= "870784accfe5c17fd68b4065f023f335126ece20"
+SRC_URI += "git://github.com/gmzhuo/yocto-kernel-cache.git;type=kmeta;name=meta-bsp;branch=yocto-5.4;protocol=https;destsuffix=${KMETA}"
+COMPATIBLE_MACHINE += "|qcom-ipq807x"
+SRC_URI += "file://qcom-ipq807x-dts-nandc.patch"
