@@ -1,5 +1,5 @@
 FILESEXTRAPATHS_append := "${THISDIR}/${PN}/"
-SRCREV_meta-bsp ?= "94507b473e18ffe998e1e4a1e7d91cbf1cf76e35"
+SRCREV_meta-bsp ?= "a39914e5ab19acaf1c1f10260a87fefa606d02a7"
 SRC_URI += "git://github.com/gmzhuo/yocto-kernel-cache.git;type=kmeta;name=meta-bsp;branch=yocto-5.4;protocol=https;destsuffix=${KMETA}"
 COMPATIBLE_MACHINE += "|qcom-ipq807x"
 SRC_URI += "file://qcom-ipq807x-dts-nandc.patch file://710-net-add-qualcomm-essedma-ethernet-driver.patch"
